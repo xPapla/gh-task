@@ -1,0 +1,15 @@
+{
+  "folders": [{ "path": ".", "name": "root" }],
+  "settings": {
+    "files.associations": {
+      ".huskyrc": "json"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+    ]
+  }
+}
