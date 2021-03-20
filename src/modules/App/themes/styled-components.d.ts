@@ -8,7 +8,16 @@ declare module "styled-components" {
 
     colors: {
       main: string;
-      secondary: string;
+      links: string;
+      textWhite: string;
+    };
+
+    spacing: number;
+
+    search: {
+      bgColor: string;
+      placeholderColor: string;
+      color: string;
     };
   }
 }

@@ -3,7 +3,11 @@
   "settings": {
     "files.associations": {
       ".huskyrc": "json"
-    }
+    },
+    "cSpell.words": [
+      "desaturate",
+      "fontsource"
+    ]
   },
   "extensions": {
     "recommendations": [
