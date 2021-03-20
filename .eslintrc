@@ -1,0 +1,22 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "arrow-body-style": ["warn", "as-needed"],
+    "react/destructuring-assignment": ["warn", "always"],
+    "react/jsx-key": ["warn", { "checkFragmentShorthand": true }],
+    "react/self-closing-comp": ["warn", { "component": true, "html": true }],
+    "@typescript-eslint/array-type": ["warn", { "default": "array-simple" }],
+    "no-useless-rename": [
+      "warn",
+      {
+        "ignoreDestructuring": false,
+        "ignoreImport": false,
+        "ignoreExport": false
+      }
+    ],
+    "operator-assignment": ["warn", "always"],
+    "object-shorthand": ["warn", "always"],
+    "no-useless-computed-key": ["warn", { "enforceForClassMembers": true }],
+    "no-useless-return": ["warn"]
+  }
+}
