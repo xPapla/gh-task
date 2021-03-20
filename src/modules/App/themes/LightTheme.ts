@@ -1,11 +1,13 @@
 import { DefaultTheme } from "styled-components";
 
 export const LightTheme: DefaultTheme = {
-  pageBackground: "#FBFCFD",
-
   colors: {
-    main: "#452CDC",
+    pageBackground: "#FBFCFD",
+    cardBackground: "#FFFFFF",
+
+    primary: "#452CDC",
     links: "#2F80ED",
+
     textWhite: "#FFFFFF",
   },
 

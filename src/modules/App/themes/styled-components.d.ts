@@ -4,11 +4,13 @@ import "styled-components";
 // and extend them!
 declare module "styled-components" {
   export interface DefaultTheme {
-    pageBackground: string;
-
     colors: {
-      main: string;
+      pageBackground: string;
+      cardBackground: string;
+
+      primary: string;
       links: string;
+
       textWhite: string;
     };
 

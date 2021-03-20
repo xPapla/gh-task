@@ -7,15 +7,14 @@ export const OuterWrapper = styled.div`
 
   display: flex;
   align-items: center;
-
+  flex-grow: 1;
   transition: all 200ms;
 
   :focus-within {
-    box-shadow: inset 0px 0px 0px 1px ${p => p.theme.colors.main};
+    box-shadow: inset 0px 0px 0px 1px ${p => p.theme.colors.primary};
   }
 
   padding: 10px 8px;
-
   & > * + * {
     margin-left: 8px;
   }

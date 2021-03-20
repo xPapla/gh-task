@@ -6,7 +6,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   body {
     font-family: "Roboto";
-    background: ${p => p.theme.pageBackground};
+    background: ${p => p.theme.colors.pageBackground};
   }
   #root {
     min-height: 100vh;
