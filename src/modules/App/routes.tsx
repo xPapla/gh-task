@@ -1,6 +1,7 @@
 import { PartialRouteObject } from "react-router";
 import { LazyDefaultLayout } from "../Layouts";
 import { LazyUserStats } from "../UserStats";
+import { LazyWelcome } from "../Welcome";
 
 export const routes: PartialRouteObject[] = [
   {
@@ -8,7 +9,7 @@ export const routes: PartialRouteObject[] = [
     children: [
       {
         path: "/",
-        element: <div>Hello</div>,
+        element: <LazyWelcome />,
       },
       {
         path: ":name",
