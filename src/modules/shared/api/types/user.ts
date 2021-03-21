@@ -1,5 +1,5 @@
 import { Expose } from "class-transformer";
-import { IsInt, IsString } from "class-validator";
+import { IsInt, IsOptional, IsString } from "class-validator";
 
 export class User {
   @Expose()
@@ -17,4 +17,9 @@ export class User {
   @Expose({ name: "public_repos" })
   @IsInt()
   publicRepos!: number;
+
+  @Expose()
+  @IsOptional()
+  @IsString()
+  bio!: string | null;
 }

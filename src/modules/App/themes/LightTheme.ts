@@ -8,6 +8,9 @@ export const LightTheme: DefaultTheme = {
     primary: "#452CDC",
     links: "#2F80ED",
     spinner: "#404040",
+    header: "#000000",
+    userBio: "#828282",
+    stargazersCount: "#5a5a5a",
 
     textWhite: "#FFFFFF",
   },

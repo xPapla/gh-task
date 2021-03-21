@@ -11,6 +11,9 @@ declare module "styled-components" {
       primary: string;
       links: string;
       spinner: string;
+      header: string;
+      userBio: string;
+      stargazersCount: string;
 
       textWhite: string;
     };

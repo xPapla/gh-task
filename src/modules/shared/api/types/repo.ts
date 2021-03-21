@@ -13,4 +13,8 @@ export class Repo {
   @Expose({ name: "stargazers_count" })
   @IsInt()
   stargazersCount!: number;
+
+  @Expose({ name: "html_url" })
+  @IsString()
+  htmlUrl!: string;
 }

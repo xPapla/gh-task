@@ -13,5 +13,8 @@ export const Header = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+
+  padding: ${p => p.theme.spacing * 3}px;
 `;

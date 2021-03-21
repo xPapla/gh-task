@@ -7,6 +7,6 @@ export const AppContent: FunctionComponent = () => {
   const element = useRoutes(routes);
 
   return (
-    <Suspense fallback={<Spinner text="Loading page..." />}>{element}</Suspense>
+    <Suspense fallback={<Spinner text="Loading app..." />}>{element}</Suspense>
   );
 };
