@@ -7,6 +7,7 @@ export const LightTheme: DefaultTheme = {
 
     primary: "#452CDC",
     links: "#2F80ED",
+    spinner: "#404040",
 
     textWhite: "#FFFFFF",
   },

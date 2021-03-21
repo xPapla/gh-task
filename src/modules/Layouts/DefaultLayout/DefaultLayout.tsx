@@ -1,9 +1,10 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, Suspense, useCallback } from "react";
 import { Outlet, useNavigate } from "react-router";
 import {
   SearchBox,
   SearchButton,
   SearchContextProvider,
+  Spinner,
 } from "../../shared/components";
 import { Content, Header } from "./components";
 
@@ -25,7 +26,9 @@ export const DefaultLayout: FunctionComponent = () => {
         </SearchContextProvider>
       </Header>
       <Content>
-        <Outlet />
+        <Suspense fallback={<Spinner text="Loading page..." />}>
+          <Outlet />
+        </Suspense>
       </Content>
     </>
   );

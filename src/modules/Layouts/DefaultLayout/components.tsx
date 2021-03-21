@@ -11,4 +11,7 @@ export const Header = styled.div`
   }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  display: flex;
+  flex-grow: 1;
+`;

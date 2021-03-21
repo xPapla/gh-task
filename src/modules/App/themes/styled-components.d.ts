@@ -10,6 +10,7 @@ declare module "styled-components" {
 
       primary: string;
       links: string;
+      spinner: string;
 
       textWhite: string;
     };
