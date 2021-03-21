@@ -1,5 +1,6 @@
 import { transformAndValidate } from "class-transformer-validator";
 import { useQuery } from "react-query";
+import { throwIfNotArray } from "../../../../utils";
 import { withApiClient } from "../apiClient";
 import { Repo } from "../types";
 
@@ -16,10 +17,9 @@ const fetchUserReposPage = async (
         throw new Error("User not found");
       })
       .json(async (json: any) => {
-        const repos = await transformAndValidate(Repo, json);
-        if (!Array.isArray(repos)) {
-          throw new Error("Unexpected non-array type");
-        }
+        const repos = await transformAndValidate(Repo, json, {
+          transformer: { excludeExtraneousValues: true },
+        }).then(throwIfNotArray);
 
         return repos;
       }),
