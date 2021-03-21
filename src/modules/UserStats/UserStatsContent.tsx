@@ -21,7 +21,7 @@ export const UserStatsComponent: FunctionComponent<Props> = ({ data }) => (
         <UserAvatar src={data.avatarUrl} alt="avatar" />
         <UserName>{data.login}</UserName>
       </UserCardInfo>
-      <UserBio>{data.bio}</UserBio>
+      {data.bio && <UserBio>{data.bio}</UserBio>}
     </UserCard>
     <SectionHeader>Top repositories</SectionHeader>
     <UserTopRepos username={data.login} />

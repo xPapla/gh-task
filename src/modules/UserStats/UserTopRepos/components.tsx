@@ -50,3 +50,14 @@ export const RepoStargazers = styled.span`
   color: ${p => p.theme.colors.stargazersCount};
   margin-left: ${p => p.theme.spacing}px;
 `;
+
+export const NoRepos = styled.span`
+  flex-shrink: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+
+  color: ${p => p.theme.colors.userBio};
+`;

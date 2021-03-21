@@ -47,6 +47,7 @@ export const SectionHeader = styled.h4`
   line-height: 24px;
   letter-spacing: 0.15px;
 
+  color: ${p => p.theme.colors.header};
   margin-top: ${p => p.theme.spacing * 4}px;
   margin-bottom: ${p => p.theme.spacing * 2}px;
 `;

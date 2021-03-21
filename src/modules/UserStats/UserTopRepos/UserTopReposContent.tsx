@@ -1,6 +1,12 @@
 import { FunctionComponent } from "react";
 import { Repo } from "../../shared/api";
-import { RepoCard, RepoList, RepoNameA, RepoStargazers } from "./components";
+import {
+  NoRepos,
+  RepoCard,
+  RepoList,
+  RepoNameA,
+  RepoStargazers,
+} from "./components";
 
 interface Props {
   repos: Repo[];
@@ -8,14 +14,16 @@ interface Props {
 
 export const UserTopReposContent: FunctionComponent<Props> = ({ repos }) => {
   if (repos.length === 0) {
-    return <div>Nothing to show 😥</div>;
+    return <NoRepos>Nothing to show 😥</NoRepos>;
   }
 
   return (
     <RepoList>
       {repos.map(it => (
         <RepoCard key={it.id}>
-          <RepoNameA href={it.htmlUrl}>{it.name}</RepoNameA>
+          <RepoNameA href={it.htmlUrl} target="_blank">
+            {it.name}
+          </RepoNameA>
           <RepoStargazers>{it.stargazersCount} ⭐</RepoStargazers>
         </RepoCard>
       ))}
