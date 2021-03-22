@@ -31,10 +31,12 @@
     "wretch": "^1.7.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [

@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Github search
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,6 +18,14 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn cypress:open`
+
+Launches cypress. You can click at the test to see it running. Remember to run app locally with `yarn start` first.
+
+### `yarn cypress:run`
+
+Runs all cypress e2e tests in chrome. Results will be printed in console. Remember to run app locally with `yarn start` first.
 
 ### `yarn build`
 
