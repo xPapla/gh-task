@@ -88,7 +88,7 @@ describe("Github search", () => {
     cy.get("[data-cy=user-card]")
       .should("exist")
       .should("be.visible")
-      .should("contain.text", "Yeti")
+      .should("contain.text", "Yeti Bear")
       .should("contain.text", "Some random bio info.");
 
     cy.get("[data-cy=repos-list] > div")
@@ -131,7 +131,7 @@ describe("Github search", () => {
     cy.get("[data-cy=user-card]")
       .should("exist")
       .should("be.visible")
-      .should("contain.text", "Koala");
+      .should("contain.text", "Koala The Greatest");
 
     cy.get("[data-cy=repos-list]").should("not.exist");
     cy.get("[data-cy=no-repos]")

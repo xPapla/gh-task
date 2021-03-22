@@ -19,7 +19,7 @@ export const UserStatsComponent: FunctionComponent<Props> = ({ data }) => (
     <UserCard data-cy="user-card">
       <UserCardInfo>
         <UserAvatar src={data.avatarUrl} alt="avatar" />
-        <UserName>{data.login}</UserName>
+        <UserName>{data.name || data.login}</UserName>
       </UserCardInfo>
       {data.bio && <UserBio>{data.bio}</UserBio>}
     </UserCard>

@@ -10,6 +10,11 @@ export class User {
   @IsString()
   login!: string;
 
+  @Expose()
+  @IsString()
+  @IsOptional()
+  name!: string | null;
+
   @Expose({ name: "avatar_url" })
   @IsString()
   avatarUrl!: string;
