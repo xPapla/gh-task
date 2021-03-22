@@ -1,4 +1,4 @@
-# Github search ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=github-search-lac)
+# Github search [![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=github-search-lac)](https://github-search-lac.vercel.app/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
