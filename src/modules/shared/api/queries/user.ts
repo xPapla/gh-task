@@ -7,7 +7,7 @@ import { User } from "../types";
 const fetchUser = async (name: string): Promise<User> =>
   withApiClient(client =>
     client
-      .url(`/users/${name}`)
+      .url(`/users/${name.toLowerCase()}`)
       .get()
       .notFound(() => {
         throw new Error("User not found");

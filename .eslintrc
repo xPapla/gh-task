@@ -1,5 +1,9 @@
 {
-  "extends": ["react-app", "react-app/jest"],
+  "extends": [
+    "react-app",
+    "plugin:cypress/recommended",
+    "plugin:chai-friendly/recommended"
+  ],
   "rules": {
     "arrow-body-style": ["warn", "as-needed"],
     "react/destructuring-assignment": ["warn", "always"],

@@ -14,11 +14,11 @@ interface Props {
 
 export const UserTopReposContent: FunctionComponent<Props> = ({ repos }) => {
   if (repos.length === 0) {
-    return <NoRepos>Nothing to show 😥</NoRepos>;
+    return <NoRepos data-cy="no-repos">Nothing to show 😥</NoRepos>;
   }
 
   return (
-    <RepoList>
+    <RepoList data-cy="repos-list">
       {repos.map(it => (
         <RepoCard key={it.id}>
           <RepoNameA href={it.htmlUrl} target="_blank">

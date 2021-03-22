@@ -11,7 +11,9 @@ const fetchUserReposPage = async (
 ): Promise<Repo[]> =>
   withApiClient(client =>
     client
-      .url(`/users/${username}/repos?per_page=${pageSize}&page=${page}`)
+      .url(
+        `/users/${username.toLowerCase()}/repos?per_page=${pageSize}&page=${page}`,
+      )
       .get()
       .notFound(() => {
         throw new Error("User not found");

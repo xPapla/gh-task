@@ -16,7 +16,7 @@ interface Props {
 
 export const UserStatsComponent: FunctionComponent<Props> = ({ data }) => (
   <>
-    <UserCard>
+    <UserCard data-cy="user-card">
       <UserCardInfo>
         <UserAvatar src={data.avatarUrl} alt="avatar" />
         <UserName>{data.login}</UserName>

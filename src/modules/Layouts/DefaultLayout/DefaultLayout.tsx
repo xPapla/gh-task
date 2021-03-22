@@ -21,8 +21,8 @@ export const DefaultLayout: FunctionComponent = () => {
     <>
       <Header>
         <SearchContextProvider onSubmit={onSearch}>
-          <SearchBox placeholder="Search for users" />
-          <SearchButton />
+          <SearchBox placeholder="Search for users" data-cy="search-box" />
+          <SearchButton data-cy="search-button" />
         </SearchContextProvider>
       </Header>
       <Content>
